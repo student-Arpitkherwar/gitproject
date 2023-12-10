@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+ 
+}
+.center{
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  height:80% ;
+  width: 70%;
+  /* background-color: red; */
+  position: relative;
+}
+.imagecontainer{
+  overflow: hidden;
+  height: 100%;
+  width: 0%;
+  /* background-color: yellow; */
+  position: absolute;
+}
+ img{
+  height: 100%;
+  object-fit: cover;
+}
+.text{
+  position: absolute;
+  bottom: 15%;
+  left: -10%;
+  overflow: hidden;
+  width: 400px;
+  z-index: 999;
+  /* background-color: red; */
+  font-family:"futura";
+  height: 100px;
+}
+.text h1{
+  top: 100px;
+  font-size: 5vw;
+  position: absolute;
+}

@@ -1,0 +1,61 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "futura";
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.img{
+  height: 100%;
+  width: 100%;
+  background-image: url(img.jpg);
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.box{
+  height: 600px;
+  width: 350px;
+  padding: 50px;
+  background-color:rgba(255, 255, 255, 0.363);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.text{
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+}
+.text:hover{
+  height:50px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.box h1{
+  position: relative;
+}
+h1::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+ transform: scaleX(0);
+  transition: ease-in-out;
+}
+h1:hover{
+  width: 100%;
+  transform: scaleX(1);
+}
+ 
+
+
